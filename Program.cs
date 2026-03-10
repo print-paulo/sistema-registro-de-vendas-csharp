@@ -1,48 +1,6 @@
 using System;
 using System.IO;
 
-public class Produto // Classe produto
-{
-    string NomeProduto { get; set; }
-    string TipoProduto { get; set ;}
-    decimal PreçoProduto { get; set; }
-    int QuantidadeEstoque { get; set; }
-
-    public void RegistrarProduto()
-    {
-        // A ser feito...
-    }
-}
-
-public class Cliente // Classe Cliente
-{
-    string NomeCliente { get; set; }
-    int NumeroTelefone { get; set; }
-}
-
-public class Venda // Relação de venda entre o Produto e o Cliente
-{
-    public Cliente Comprador { get; set; }
-    public Produto ItemVendido { get; set; }
-
-    public int Quantidade { get; set; }
-    public int Data { get; set;}
-}
-
-public string CheckFile(string filePath) // Checar se o arquivo JSON de venda já existe
-{
-    if (File.Exists(filePath)) 
-    {
-        bool fileExist = true;
-        return fileExist;
-    }
-    else
-    {
-        bool fileExist = false;
-        return fileExist;
-    }
-}
-
 class Program
 {
     static void Main()
@@ -91,7 +49,11 @@ class Program
                         {
                             case 1:
                             {
-                                // A fazer...
+                                Console.WriteLine("Digite o nome do produto: ");
+                                string nomeCliente = Console.ReadLine();
+
+                                Console.WriteLine("Digite o tipo do produto: ");
+                                int numeroCliente = int.Parse(Console.ReadLine());
                             }
                             case 2:
                             {
@@ -112,7 +74,6 @@ class Program
                         }
                     }
                 }
-            }
                 case 2:
                 {
                     int opcao = 0;
@@ -153,9 +114,10 @@ class Program
                             {
                                 break;
                             }
+                        }
                     }
                 }
-            }
+            }  
         }
     }
 }
