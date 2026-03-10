@@ -64,8 +64,8 @@ class Program
             Console.WriteLine("| 3 - Sair                                  |");
             Console.WriteLine("---------------------------------------------");
 
-            Console.WriteLine("O que deseja fazer? ")
-            opcao = Convert.ToInt32(Console.ReadLine())
+            Console.WriteLine("O que deseja fazer? ");
+            opcao = Convert.ToInt32(Console.ReadLine());
 
             switch (opcao)
             {
@@ -83,8 +83,36 @@ class Program
                         Console.WriteLine("| 4 - Listar                                |");
                         Console.WriteLine("| 5 - Sair                                  |");
                         Console.WriteLine("---------------------------------------------");
+
+                        Console.WriteLine("O que deseja fazer? ");
+                        opcao = Convert.ToInt32(Console.Readline());
+
+                        switch (opcao)
+                        {
+                            case 1:
+                            {
+                                // A fazer...
+                            }
+                            case 2:
+                            {
+                                // A fazer...
+                            }
+                            case 3:
+                            {
+                                // A fazer...
+                            }
+                            case 4:
+                            {
+                                // A fazer...
+                            }
+                            case 5:
+                            {
+                                break;
+                            }
+                        }
                     }
                 }
+            }
                 case 2:
                 {
                     int opcao = 0;
@@ -99,6 +127,32 @@ class Program
                         Console.WriteLine("| 4 - Listar                                |");
                         Console.WriteLine("| 5 - Sair                                  |");
                         Console.WriteLine("---------------------------------------------");
+
+                        Console.WriteLine("O que deseja fazer? ");
+                        opcao = Convert.ToInt32(Console.Readline());
+
+                        switch (opcao)
+                        {
+                            case 1:
+                            {
+                                // A fazer...
+                            }
+                            case 2:
+                            {
+                                // A fazer...
+                            }
+                            case 3:
+                            {
+                                // A fazer...
+                            }
+                            case 4:
+                            {
+                                // A fazer...
+                            }
+                            case 5:
+                            {
+                                break;
+                            }
                     }
                 }
             }
