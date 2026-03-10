@@ -1,16 +1,11 @@
 using System;
 using System.IO;
+using SistemaVendas.Services;
 
 class Program
 {
     static void Main()
     {
-        string clientesJson = "clientes.json";
-        string produtosJson = "produtos.json";
-        string vendasJson = "vendas.json";
-        
-        CheckFile(registro);
-        
         int opcao = 0;
         while (opcao != 3) 
         {
@@ -49,11 +44,7 @@ class Program
                         {
                             case 1:
                             {
-                                Console.WriteLine("Digite o nome do produto: ");
-                                string nomeCliente = Console.ReadLine();
-
-                                Console.WriteLine("Digite o tipo do produto: ");
-                                int numeroCliente = int.Parse(Console.ReadLine());
+                                
                             }
                             case 2:
                             {
