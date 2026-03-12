@@ -23,9 +23,9 @@ namespace SistemaVendas.Services
 
             Cliente novoCliente = new Cliente
             {
-                NomeCliente = nome;
-                NumeroTelefone = numero;
-            }
+                NomeCliente = nome,
+                NumeroTelefone = numero
+            };
 
             // A CONTINUAR...
         }

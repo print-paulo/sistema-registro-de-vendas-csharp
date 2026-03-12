@@ -8,7 +8,7 @@ namespace SistemaVendas.Models
         public Cliente(string nomeCliente, long numeroCliente)
         {
             NomeCliente = nomeCliente;
-            NumeroTelefone = numeroCliente
+            NumeroTelefone = numeroCliente;
         }
     }
 }
