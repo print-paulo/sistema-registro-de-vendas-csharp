@@ -21,13 +21,29 @@ namespace SistemaVendas.Services
                 return;
             }
 
-            Cliente novoCliente = new Cliente
+            Cliente novoCliente = new Cliente // Cria a instancia do modelo
             {
                 NomeCliente = nome,
                 NumeroTelefone = numero
             };
 
-            // A CONTINUAR...
+            List<Cliente> listaAtual = CarregarClientes(); // Carrega a lista de clientes do arquivo json
+            listaAtual.Add(novoCliente) // Adiciona o novo cliente
+            SalvarClientes(listaAtual) // Salva a lista
+        }
+        
+        private List<Cliente> CarregarClientes()
+        {
+            if (!File.Exists(path) return new List<Cliente>()) 
+            string json = File.ReadAllText(path); 
+            // Se o arquivo estiver vazio, retorna uma lista nova
+            return JsonSerializer.Deserialize<List<Cliente>>(json) ?? List<Cliente>();
+        }
+
+        private List<Cliente> SalvarClientes()
+        {
+            string json = JsonSerializer.Serialize(clientes, new JsonSerializerOptions {WriteIntended = true})
+            File.WriteAllText(path, json)
         }
     }
 }
